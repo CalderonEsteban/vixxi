@@ -15,7 +15,7 @@ body{
     background-color: black;
     text-align: center;
     padding:5px;
-    border-radius: ;
+    border-radius: 5px;
     
   }
 
@@ -107,9 +107,9 @@ body{
   border: 1px solid #eee;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  display: flex; /* Para alinear logo y título si lo deseas */
-  flex-direction: column; /* Asegura que los elementos internos estén en columna */
-  align-items: center; /* Centra horizontalmente el logo y el título */
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
 }
 
 .remember-forgot {
@@ -128,8 +128,7 @@ body{
 
 .remember input[type="checkbox"] {
   margin-right: 5px;
-  /* Reducir el ancho si es necesario, aunque por defecto no debería ser enorme */
-  width: auto; /* Asegura que el ancho se ajuste al contenido */
+  width: auto; 
 }
 
 .remember label {
