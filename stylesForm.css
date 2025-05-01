@@ -1,0 +1,187 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(/imagenes/fondo\ azul\ marino.jpeg);
+    background-size:cover;
+}
+.logueo{
+    margin: center;
+}
+.logo {
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding:5px;
+    border-radius: ;
+    
+  }
+
+  
+  .logo a {
+    font-size: 24px; /* Ajusta el tamaño del "logo" */
+    color: #333;
+    text-decoration: none;
+  }
+  img{
+    width: 50px;
+  }
+  
+  .logo a:hover {
+    opacity: 0.8;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 28px;
+    text-align: center; /* Centra el título */
+  }
+
+.input-container {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  input {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    outline: none;
+    color: #333; /* Asegura que el texto escrito sea visible */
+  }
+  
+  label {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-size: 16px;
+    color: #999;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none; /* Permite hacer clic en el input */
+  }
+  
+  /* Ocultar el label cuando el placeholder está visible (estado inicial) */
+  input:placeholder-shown + label {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  /* Asegurarse de que el placeholder no se muestre al enfocar */
+  input:focus::placeholder {
+    color: transparent;
+  }
+  
+  /* Mostrar el label movido cuando el input está enfocado */
+  input:focus + label {
+    top: -8px;
+    left: 5px;
+    font-size: 12px;
+    color: #333;
+    background-color: white;
+    padding: 0 5px;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Mantener el label movido si el input tiene contenido */
+  input:not(:placeholder-shown) + label {
+    top: -8px;
+    left: 5px;
+    font-size: 12px;
+    color: #333;
+    background-color: white;
+    padding: 0 5px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+ .login-container {
+    background-color: #fff;
+  width: 350px;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex; /* Para alinear logo y título si lo deseas */
+  flex-direction: column; /* Asegura que los elementos internos estén en columna */
+  align-items: center; /* Centra horizontalmente el logo y el título */
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #777;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+}
+
+.remember input[type="checkbox"] {
+  margin-right: 5px;
+  /* Reducir el ancho si es necesario, aunque por defecto no debería ser enorme */
+  width: auto; /* Asegura que el ancho se ajuste al contenido */
+}
+
+.remember label {
+  position: static;
+  transform: none;
+  font-size: inherit;
+  color: inherit;
+  pointer-events: auto;
+  background-color: transparent;
+  padding: 0;
+}
+
+.forgot a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.forgot a:hover {
+  text-decoration: underline;
+}
+
+.button-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.button-container button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button-container button:hover {
+  background-color: #0056b3;
+}
+
+.create-account {
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+}
+
+.create-account a {
+  color: #28a745;
+  text-decoration: none;
+}
+
+.create-account a:hover {
+  text-decoration: underline;
+}
