@@ -5,8 +5,7 @@
 }
 body{
     background-image: url(/imagenes/fondo\ azul\ marino.jpeg);
-    color:#A8A8A8;
-    
+    color:#A8A8A8;  
 }
 
 header{
@@ -90,8 +89,8 @@ img:not(#imgLogo){
     
 }
 .prendaDestacada{
-    width: 300px;
-    height: 400px;
+    width: 18.75rem;
+    height: 25rem;
     border-radius: 10px;  
     overflow: hidden;
 }
@@ -100,15 +99,18 @@ img:not(#imgLogo){
 }
 
 .menuInferior{ 
-    width: 300px;
+  
     position: relative;
     top:0;
-    height: 300px;
+   width: 80vw;
+   height: 80vh;
     overflow: hidden;
     border-radius: 50%;
     border: 10px double silver;
     flex-wrap: wrap;
-    gap:20px;
+    
+    max-width: 18.75rem;
+    max-height: 18.75rem;
 }
 .menuInferior img{
     transition: filter 0.3s ease-in-out;
@@ -120,7 +122,7 @@ h2{
     width: 100%;
     text-align: center;
     font-weight: 100;
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 h3:not(.tituloFooter, .tituloFiltro){
     position: absolute;
@@ -149,6 +151,15 @@ footer div{
     justify-content: space-around;
     margin-bottom: 30px;
 }
+footer div> * { 
+    margin-right: 10px; 
+  }
+  
+  footer div> *:last-child {
+    margin-right: 0; 
+  }
+  
+ 
 footer > p{
  text-align: center;
 }
@@ -158,7 +169,7 @@ footer > p{
 }
 li{
     list-style: none;
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
 }
 .ropa{
     display: flex;
@@ -175,7 +186,7 @@ aside{
 }
 .sectionRopa::after{
     content: "";
-    width: 300px;
+    width: 18.75rem;
 }
 .tituloFiltro{
     text-align: center;
@@ -183,14 +194,54 @@ aside{
 h4{
     margin: 15px;
 }
-.mainFormularios{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-label{
-    margin-left: 40px;
+
+
+
+
+@media (max-width:700px) {
+    html{
+        font-size: 14px;
+    }
+    header{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+grid-template-areas: "menu logo cuenta";
+padding: 1rem;
+    }
+    header a{
+        display: block;
+    }
+    #logo{
+        grid-area: logo;
+        text-align: center;
+        margin: 0;
+    }
+
+    #logo img{
+        width:35%;
+    }
+
+    #cuenta{
+        grid-area:cuenta;
+        justify-self: end;
+        margin: 0;
+    }
+
+    #cuenta a{
+        margin:0 3px;
+        padding: 2px 5px;
+    }
+  
+    #navegador{
+        grid-area: menu;
+        position:relative;
+        justify-self: start;
+        margin-top: 15px;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    
 }
 
 
