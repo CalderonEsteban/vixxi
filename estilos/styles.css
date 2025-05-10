@@ -85,7 +85,7 @@ img:not(#imgLogo){
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    
     
 }
 .prendaDestacada{
@@ -175,7 +175,7 @@ li{
     display: flex;
     width: 80vw;
     margin: auto;
-    background-color: antiquewhite;
+    background-color: #f2ebe3;
 }
 aside{
  width: 450px;
@@ -186,7 +186,8 @@ aside{
 }
 .sectionRopa::after{
     content: "";
-    width: 18.75rem;
+    width:18.75rem;
+ 
 }
 .tituloFiltro{
     text-align: center;
