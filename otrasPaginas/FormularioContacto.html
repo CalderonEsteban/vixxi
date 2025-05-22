@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos/stylesForm.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <a href="/index.html"><img src="/imagenes/logo.png" alt="logo"></a> 
+        </div>    
+
+            <Form action="https://formspree.io/f/mgvkbzbo" method="post">
+                <div class="input-container">
+                        <input class="informacionUsuario" type="text" id="nombreContacto" name="nombre" placeholder="Nombre" required>
+                        <label for="nombreContacto">Nombre</label>
+                    </div>
+                    <div class="input-container">
+                        <input class="informacionUsuario" type="email" id="emailContacto" name="_replyto" placeholder="Email" required>
+                        <label for="emailContacto">Email</label>
+                    </div>
+                    <div class="input-container">
+                        <input class="informacionUsuario" type="text" id="asunto" name="asunto" placeholder="Asunto" required>
+                        <label for="asunto">Asunto</label>
+                    </div>
+                    <div class="input-container">
+                        <textarea class="informacionUsuario" id="mensaje" name="mensaje" placeholder="Deja tu mensaje" rows="5" cols="50" required></textarea>
+                        <label for="mensaje">Mensaje</label>
+                    </div>
+                    <div class="button-container">
+              <button type="submit">Enviar</button>
+            </div>
+            </Form>
+            
+    </div>
+</body>
+</html>

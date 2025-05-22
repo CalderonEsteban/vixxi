@@ -45,7 +45,7 @@ body{
     margin-bottom: 15px;
   }
   
-  input {
+  input, textarea {
     border: 1px solid #ccc;
     padding: 10px;
     width: 300px;
@@ -65,18 +65,18 @@ body{
   }
   
   /* Ocultar el label cuando el placeholder está visible (estado inicial) */
-  input:placeholder-shown + label {
+  .informacionUsuario:placeholder-shown + label {
     opacity: 0;
     visibility: hidden;
   }
   
   /* Asegurarse de que el placeholder no se muestre al enfocar */
-  input:focus::placeholder {
+  .informacionUsuario:focus::placeholder {
     color: transparent;
   }
   
   /* Mostrar el label movido cuando el input está enfocado */
-  input:focus + label {
+  .informacionUsuario:focus + label {
     top: -8px;
     left: 5px;
     font-size: 12px;
@@ -88,7 +88,7 @@ body{
   }
   
   /* Mantener el label movido si el input tiene contenido */
-  input:not(:placeholder-shown) + label {
+  .informacionUsuario:not(:placeholder-shown) + label {
     top: -8px;
     left: 5px;
     font-size: 12px;
@@ -113,9 +113,7 @@ body{
 }
 
 .remember-forgot {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  
   margin-bottom: 15px;
   font-size: 14px;
   color: #777;
