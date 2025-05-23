@@ -1,6 +1,6 @@
 TRABAJO FRONT-END
 
-Trabajo de Esteban Caledrón
+Trabajo de Esteban Calderón
 
 Descripcion:
 
