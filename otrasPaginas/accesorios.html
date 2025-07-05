@@ -8,12 +8,31 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <div id="logo"><a href="/index.html"><img id="imgLogo" alt="logo" src="/imagenes/logo.png"></a></div>
-        <div id="cuenta"><a href="/otrasPaginas/formulario.html"><i class="bi bi-person-circle"></i></a>
-            <a href=""><i class="bi bi-cart"></i></a><a href=""><i class="bi bi-suit-heart"></i></a>
+     <header>
+    <div id="logo"><a href="/index.html"><img id="imgLogo" alt="logo" src="/imagenes/logo.png"></a></div>
+    <div id="cuenta">
+        <button class="icon-btn" onclick="location.href='/otrasPaginas/formulario.html'">
+            <i class="bi bi-person-circle"></i>
+        </button>
+
+        <div class="cart-wrapper">
+            <button id="cart-button" class="cart-icon-btn">
+                <i class="bi bi-cart"></i>
+                <span id="cart-count" class="cart-count-badge">0</span>
+            </button>
+            <div id="cart-dropdown" class="cart-dropdown-content">
+                <div id="cart-items-container" class="cart-items-container"></div>
+                <div id="cart-total" class="cart-total"></div>
+                <div id="cart-actions" class="cart-actions"></div>
+            </div>
         </div>
-        <div id="navegador"><nav>
+
+        <button class="icon-btn">
+            <i class="bi bi-suit-heart"></i>
+        </button>
+    </div>
+    <div id="navegador">
+        <nav>
             <a class="subrayado" href="/otrasPaginas/trajes.html">Trajes</a>
             <a class="subrayado" href="/otrasPaginas/camisas.html">Camisas</a>
             <a class="subrayado" href="/otrasPaginas/pantalones.html">Pantalones</a>
@@ -21,7 +40,7 @@
             <a class="subrayado" href="/otrasPaginas/accesorios.html">Accesorios</a>
         </nav>
     </div>
-    </header>
+</header>
     <main class="ropa">
         <aside>
             <hr>
@@ -48,55 +67,8 @@
                 <label><input type="checkbox" name="tela" value="poliester"> Poliéster</label><br>
               </div>
         </aside>
-       <section class="sectionRopa">
-        <div class="prendaDestacada"><img src="/imagenes/cinturon1.png" alt="cinturón negro"><div class="detallesDelProducto">
-    <h3 class="tituloProducto">PRENDA</h3>
-    <p class="descripcionDelProducto">DRESCRIPCION: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <p class="precioDelProducto">PRECIO: $XX.XX</p>
-    <input type="submit" value="agregar al carrito">
-  </div></div>
-        <div class="prendaDestacada"><img src="/imagenes/cinturon2.png" alt="conturón marrón"><div class="detallesDelProducto">
-    <h3 class="tituloProducto">PRENDA</h3>
-    <p class="descripcionDelProducto">DRESCRIPCION: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <p class="precioDelProducto">PRECIO: $XX.XX</p>
-    <input type="submit" value="agregar al carrito">
-  </div></div>
-        <div class="prendaDestacada"><img src="/imagenes/corbata1.jpeg" alt="corbata roja"><div class="detallesDelProducto">
-    <h3 class="tituloProducto">PRENDA</h3>
-    <p class="descripcionDelProducto">DRESCRIPCION: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <p class="precioDelProducto">PRECIO: $XX.XX</p>
-    <input type="submit" value="agregar al carrito">
-  </div></div>
-        <div class="prendaDestacada"><img src="/imagenes/corbata2.jpeg" alt="corbata gris con rayas"><div class="detallesDelProducto">
-    <h3 class="tituloProducto">PRENDA</h3>
-    <p class="descripcionDelProducto">DRESCRIPCION: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <p class="precioDelProducto">PRECIO: $XX.XX</p>
-    <input type="submit" value="agregar al carrito">
-  </div></div>
-        <div class="prendaDestacada"><img src="/imagenes/corbata3.jpeg" alt="corbata negra con flores"><div class="detallesDelProducto">
-    <h3 class="tituloProducto">PRENDA</h3>
-    <p class="descripcionDelProducto">DRESCRIPCION: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <p class="precioDelProducto">PRECIO: $XX.XX</p>
-    <input type="submit" value="agregar al carrito">
-  </div></div>
-        <div class="prendaDestacada"><img src="/imagenes/pajarita.png" alt="pajarita roja"><div class="detallesDelProducto">
-    <h3 class="tituloProducto">PRENDA</h3>
-    <p class="descripcionDelProducto">DRESCRIPCION: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <p class="precioDelProducto">PRECIO: $XX.XX</p>
-    <input type="submit" value="agregar al carrito">
-  </div></div>
-        <div class="prendaDestacada"><img src="/imagenes/pajarita1.png" alt="pajarita gris"><div class="detallesDelProducto">
-    <h3 class="tituloProducto">PRENDA</h3>
-    <p class="descripcionDelProducto">DRESCRIPCION: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <p class="precioDelProducto">PRECIO: $XX.XX</p>
-    <input type="submit" value="agregar al carrito">
-  </div></div>
-        <div class="prendaDestacada"><img src="/imagenes/pañeulo.png" alt="pañuelo azul"><div class="detallesDelProducto">
-    <h3 class="tituloProducto">PRENDA</h3>
-    <p class="descripcionDelProducto">DRESCRIPCION: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <p class="precioDelProducto">PRECIO: $XX.XX</p>
-    <input type="submit" value="agregar al carrito">
-  </div></div>
+       <section class="sectionRopa" id="catalogoAccesorios">
+        
        </section>
         
     </main>
@@ -146,6 +118,6 @@
      
          <p>© 2025 VIXXI. Todos los derechos reservados.</p>
      </footer>
-
+<script src="/script.js"></script>
 </body>
 </html>
